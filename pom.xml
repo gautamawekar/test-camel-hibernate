@@ -142,7 +142,7 @@
 				<configuration>
 					<archive>
 						<manifest>
-							<mainClass>test.gawekar.camel.SimpleCamelClient</mainClass>
+							<mainClass>test.gawekar.camel.SimpleCamelFtpClient</mainClass>
 						</manifest>
 					</archive>
 				</configuration>

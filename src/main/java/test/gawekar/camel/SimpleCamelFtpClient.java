@@ -8,7 +8,7 @@ import org.apache.camel.ProducerTemplate;
 import org.apache.camel.builder.RouteBuilder;
 import org.apache.camel.impl.DefaultCamelContext;
 
-public class SimpleCamelClient {
+public class SimpleCamelFtpClient {
 	public static void main(String args[]) throws Exception{
 		DefaultCamelContext ctx = new DefaultCamelContext();
 		ctx.addRoutes(new RouteBuilder() {
