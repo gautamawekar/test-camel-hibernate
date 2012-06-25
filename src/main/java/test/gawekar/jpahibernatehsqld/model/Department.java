@@ -1,4 +1,4 @@
-package test.gawekar.jpa.model;
+package test.gawekar.jpahibernatehsqld.model;
 
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;

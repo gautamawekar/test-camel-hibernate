@@ -4,8 +4,17 @@
        http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
        http://camel.apache.org/schema/spring http://camel.apache.org/schema/spring/camel-spring.xsd">
 
-	<!--<bean class="test.gawekar.beans.ToBeCalledBean"/>
-	-->
+	<!--  jpa stuff-->
+	<bean id="txManager" class="org.springframework.orm.jpa.JpaTransactionManager">
+	        <property name="entityManagerFactory" ref="entityManagerFactory"/>
+	</bean>
+	
+	<bean id="transactionTemplate" class="org.springframework.transaction.support.TransactionTemplate">
+        <property name="transactionManager" ref="txManager"/>
+    </bean>
+	
+  
+  	<!-- camel stuff -->
 	<camelContext id="camel" xmlns="http://camel.apache.org/schema/spring">
 		<camel:packageScan>
 			<camel:package>test.gawekar.routes</camel:package>

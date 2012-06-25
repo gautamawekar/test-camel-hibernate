@@ -1,14 +1,18 @@
-package test.gawekar.jpa;
+package test.gawekar.jpahibernatehsqld;
 
 import java.util.List;
 
-import javax.persistence.*;
+import javax.persistence.EntityManager;
+import javax.persistence.EntityManagerFactory;
+import javax.persistence.EntityTransaction;
+import javax.persistence.Persistence;
+import javax.persistence.Query;
 
-import test.gawekar.jpa.model.Department;
-import test.gawekar.jpa.model.Employee;
+import test.gawekar.jpahibernatehsqld.model.Department;
+import test.gawekar.jpahibernatehsqld.model.Employee;
 
 public class Main {
-	private static EntityManagerFactory emf = Persistence.createEntityManagerFactory("test-gawekar",DBProperties.createUnitTestDBConnectionProperties()); 
+	private static EntityManagerFactory emf = Persistence.createEntityManagerFactory("test-gawekar-hsqldb-local",DBProperties.createUnitTestDBConnectionProperties()); 
 	public static void main(String args[]){
 		Department dept = new Department();
 		dept.setName("NPG");

@@ -1,4 +1,4 @@
-package test.gawekar.jpa.model;
+package test.gawekar.jpahibernatehsqld.model;
 
 import java.util.Calendar;
 import java.util.Date;

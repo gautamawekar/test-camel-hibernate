@@ -1,4 +1,4 @@
-package test.gawekar.jpa.model;
+package test.gawekar.jpahibernatehsqld.model;
 
 public enum EmployeeType {
     FULL_TIME_EMPLOYEE,

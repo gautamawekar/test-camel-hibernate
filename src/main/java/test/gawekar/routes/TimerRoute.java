@@ -9,7 +9,7 @@ public class TimerRoute extends RouteBuilder{
 		System.out.println("inside timer route");
 		System.out.println(">>>>><<<<<<<<< " + this.getContext().getName());
 		//from("timer://foo?fixedRate=true&period=5000").to("bean:toBeCalledBean?method=callme");
-		//from("timer://abc?fixedRate=true&period=10000").to("abcConsumer");
+		from("timer://abc?fixedRate=true&period=2000").to("direct:persistPerson");
 	}
 
 }

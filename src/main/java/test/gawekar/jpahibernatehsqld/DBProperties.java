@@ -1,4 +1,4 @@
-package test.gawekar.jpa;
+package test.gawekar.jpahibernatehsqld;
 
 import java.util.HashMap;
 import java.util.Map;
