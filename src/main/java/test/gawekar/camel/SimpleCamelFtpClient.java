@@ -35,7 +35,7 @@ public class SimpleCamelFtpClient {
 						//.convertBodyTo(String.class)
 						//.to("file:target/nature");
 						.setHeader(Exchange.FILE_NAME, constant("a.txt"))
-						.to("ftp://gawekar@localhost:1200/?password=gAw999em&binary=false&disconnect=true&connectTimeout=50000");
+						.to("ftp://gawekar@test-fs.nature.com/?password=gAw999em&binary=false");
 		    }
 		});
 		
